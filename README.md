@@ -23,12 +23,20 @@ O nosso site "EcoCertificadas" tem como missão conectar empresas comprometidas 
 Queremos iniciar uma conscientização que promova um mundo onde a sustentabilidade seja a norma, inspirando a mudança para um planeta mais verde e responsável, onde as empresas comprometidas com práticas sustentáveis se destaquem.
 
 ### Valores ✨
-**Sustentabilidade:**  Comprometidos com práticas sustentáveis.
+- **Sustentabilidade:**  Comprometidos com práticas sustentáveis.
 
-**Transparência:**  Valorizamos a honestidade e confiabilidade.
+- **Transparência:**  Valorizamos a honestidade e confiabilidade.
 
-**Responsabilidade Social:** Apoiamos o impacto social positivo.
+- **Responsabilidade Social:** Apoiamos o impacto social positivo.
 
-**Inovação:**  Buscamos constantemente melhorias.
+- **Inovação:**  Buscamos constantemente melhorias.
 
-**Empoderamento do Consumidor:**  Capacitamos escolhas conscientes.
+- **Empoderamento do Consumidor:**  Capacitamos escolhas conscientes.
+
+## Tecnologias Utilizadas 🚀
+
+- HTML
+- CSS
+- JavaScript 
+- JSON
+- AJAX
