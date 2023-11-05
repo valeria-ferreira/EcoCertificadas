@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas parceiras</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li active><a href="empresas.html">Empresas</a></li>
+                <li><a href="empresas-details.html">Detalhe Empresas</a></li>
+                <li><a href="classificacao.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main background="teste.jpg">
+        
+        <div class="cadastro"></div>
+            <h2>Cadastro de Empresas Ecológicas</h2>
+
+            <form action="processar_cadastro.php" method="POST">
+            <label for="nome_empresa">Nome da Empresa:</label>
+            <input type="text" id="nome_empresa" name="nome_empresa" required><br>
+
+            <label for="area_atuacao">Área de Atuação:</label>
+            <input type="text" id="area_atuacao" name="area_atuacao" required><br>
+
+            <label for="descricao_empresa">Descrição da Empresa:</label>
+            <textarea id="descricao_empresa" name="descricao_empresa" rows="4" required></textarea><br>
+
+            <label for="atos_ecologicos">Mudanças promovidas pela Empresa:</label>
+            <textarea id="atos_ecologicos" name="atos_ecologicos" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        <div>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo da Página de Ecologia">
+                </div>
+                <div class="footer-info">
+                    <p>© 2023 Página de Ecologia</p>
+                    <p>Todos os direitos reservados</p>
+                    <p>Contato: contato@paginaecologia.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../controller/appController.js"></script> <!-- Script para acessar a API e o BD-->
+</body>
+</html>
