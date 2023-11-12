@@ -38,6 +38,7 @@
     #imgBackground{
         display: block;
     }
+    
 }
 
 .scroll-down-arrow {
@@ -67,45 +68,50 @@
 .scroll-down-arrow i {
     color: var(--cor-branco);
     font-size: 30px;
-    transform: translateY(3px); /* Ajuste para centralizar melhor a gota */
+    transform: translateY(3px); /* Centralizar melhor a gota */
 }
 
 
-#sobre-nos {
-    height: 100vh;
-    background-color: var(--cor-verde-primaria);
+/* BLOCOS */
+
+.blocos {
     color: var(--cor-branco);
     text-align: center;
     padding: 50px 0;
 }
 
-#sobre-nos p {
-    font-size: 22px;
-    line-height: 1.8;
-    margin-bottom: 20px; 
-}
-
-#sobre-nos h2{
-    font-weight: bold;
-    font-family: 'Cinzel Decorative', serif;
-}
-
-
-#junte-se {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--cor-branco);
-    margin-top: 30px;
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: var(--cor-laranja);
-    border-radius: 15px;
-    text-decoration: none;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+
+/* Sobre nos */
+#sobre-nos{
+    background-color: var(--cor-verde-primaria);
+}
+#sobre-nos h2,
+#sobre-nos h3 {
+    font-weight: bold;
+    color: var(--cor-verde-escuro);
+    border-bottom: 2px solid var(--cor-verde-escuro);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#sobre-nos p{
+    font-size: 20px;
+    color: rgb(243, 243, 243);
+}
+
+#junte-se {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cor-verde-escuro);
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
 }
 
 

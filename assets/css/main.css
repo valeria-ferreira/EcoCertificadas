@@ -1,12 +1,19 @@
 :root {
     --cor-verde-primaria: #acc474;
     --cor-verde-secundaria: #388e3c;
-    --cor-laranja: #FF851B;
+    --cor-laranja: #F2BB77;
     --cor-verde-escuro: #1c2c04;
     --cor-azul: #2E5EAA;
     --cor-branco: #ffffff;
     --cor-preto: #000000;
 }
+
+/* Seleção do usuario */
+::selection {
+    background-color: var(--cor-verde-escuro); 
+    color: var(--cor-branco); 
+}
+
 
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@100;400&display=swap');
@@ -45,6 +52,13 @@
 #nav-bar ul a:hover {
     background-color: transparent;
     color: var(--cor-verde-primaria);
+}
+
+/* Ocultar h1 em telas maiores que 992px */
+@media screen and (min-width: 993px) {
+    #icon {
+        display: none;
+    }
 }
 
 /* Estilo geral para o Footer */
