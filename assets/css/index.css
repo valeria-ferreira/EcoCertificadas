@@ -114,4 +114,43 @@
     position: relative;
 }
 
+/* Empresas */
+#empresas{
+    background-color: rgb(243, 243, 243);
+}
+
+#empresas {
+    background-color: var(--cor-branco);
+    color: var(--cor-verde-escuro);
+    text-align: center;
+    padding: 50px 0;
+}
+
+#empresas h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#empresas p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#empresas #inscreva {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde-escuro);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#empresas #inscreva:hover {
+    background-color: var(--cor-verde-secundaria);
+    color: var(--cor-branco);
+}
 
