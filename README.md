@@ -1,3 +1,5 @@
+![eco](https://github.com/valeria-ferreira/EcoCertificadas/assets/89273671/81933a78-f532-4e32-9208-cfb308f73b7e)
+
 # EcoCertificadas
 
 O site "EcoCertificadas" é um projeto em andamento que está sendo desenvolvido como parte do trabalho para a disciplina de programação na Fatec Rubens Lara.
