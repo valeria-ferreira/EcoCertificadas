@@ -1,0 +1,54 @@
+:root {
+    --cor-verde-primaria: #acc474;
+    --cor-verde-secundaria: #388e3c;
+    --cor-laranja: #FF851B;
+    --cor-verde-escuro: #1c2c04;
+    --cor-azul: #2E5EAA;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@100;400&display=swap');
+
+/* Estilo geral para o Nav-Bar */
+.font {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 28px;
+}
+
+#icon {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-branco);
+    margin-left: 20px;
+    line-height: 64px;
+    letter-spacing: 1px;
+}
+
+#nav-bar {
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nav-bar ul a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-branco);
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    margin-right: 10px;
+    font-size: 18px; 
+    letter-spacing: 1px;
+}
+
+#nav-bar ul a:hover {
+    background-color: transparent;
+    color: var(--cor-verde-primaria);
+}
+
+/* Estilo geral para o Footer */
+#custom{
+    background-color: var(--cor-verde-secundaria);
+}
+

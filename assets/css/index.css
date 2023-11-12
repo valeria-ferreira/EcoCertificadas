@@ -1,0 +1,111 @@
+:root {
+    --cor-verde-primaria: #acc474;
+    --cor-verde-secundaria: #388e3c;
+    --cor-laranja: #FF851B;
+    --cor-verde-escuro: #1c2c04;
+    --cor-azul: #2E5EAA;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+#background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Ocultar o que passar do contêiner */
+}
+
+#videoBackground, #imgBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensionamento para ajuste no contêiner */
+}
+
+#imgBackground{
+    display: none;
+}
+
+@media  screen and (max-width: 992px) {
+    #videoBackground{
+        display: none;
+    }
+
+    #imgBackground{
+        display: block;
+    }
+}
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-down-arrow a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--cor-verde-primaria);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down-arrow a:hover {
+    background-color: var(--cor-verde-secundaria);
+}
+
+.scroll-down-arrow i {
+    color: var(--cor-branco);
+    font-size: 30px;
+    transform: translateY(3px); /* Ajuste para centralizar melhor a gota */
+}
+
+
+#sobre-nos {
+    height: 100vh;
+    background-color: var(--cor-verde-primaria);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 50px 0;
+}
+
+#sobre-nos p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 20px; 
+}
+
+#sobre-nos h2{
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+
+#junte-se {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    margin-top: 30px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--cor-laranja);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
