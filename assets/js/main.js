@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+
+/* ISTO É UMA BUSCA DINAMICA USANDO JAVASCRIPT PARA UMA BARRA DE PESQUISA */ 
+
 const userCardTemplate = document.querySelector("[data-result-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container")
 const searchInput = document.querySelector("[data-search")
@@ -36,4 +39,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
         userCardContainer.append(card)
         return { name: user.name, email: user.email, element: card}
     })
-})    
+})
+
+

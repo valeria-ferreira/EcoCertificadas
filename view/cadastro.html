@@ -12,6 +12,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/empresa-details.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    
 
     <!-- Importar fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,11 +35,7 @@
 
 <body>
     <header>
-        <section id="background">
-            <video id="videoBackground" autoplay muted loop>
-                <source src="" type="video/mp4">
-            </video>
-            <img id="imgBackground" alt="Background Image">
+        <section id="">
             <!-- navbar -->
             <nav id="nav-bar">
                 <div class="nav-wrapper">
@@ -53,62 +52,33 @@
             </nav>
 
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/view/empresas.html">Pesquisa</a></li>
                 <li><a href="/view/contato.html">Contato</a></li>
                 <li><a href="/view/cadastro.html" id="btn">Cadastro</a></li>
             </ul>
-
-            <div>
-                <!-- Colocar algo em cima do video? -->
-            </div>
-
-            <div class="scroll-down-arrow">
-                <a href="#sobre-nos">
-                    <i class="material-icons">arrow_downward</i>
-                </a>
-            </div>
-        </section>
+    </section>
     </header>
     <main>
-        <section id="sobre-nos" class="blocos">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-                <p>Na EcoCertificadas, acreditamos que cada escolha conta. Somos uma plataforma que une empresas
-                    comprometidas com práticas sustentáveis a consumidores conscientes.</p>
-                <h3>Por que EcoCertificadas?</h3>
-                <p>Porque acreditamos que, juntos, podemos fazer escolhas melhores para o nosso planeta. Explore,
-                    descubra e faça parte de uma comunidade que está transformando pequenas escolhas em grandes
-                    impactos. </p>
-                <p>
-                    <span id="junte-se">Junte-se a nós nesta jornada para um futuro mais sustentável</span>
-                    <img src="/assets/img/iconClean.png" alt="">
-                </p>
-            </div>
-        </section>
+        <section id="section-container">
+            <!-- Aqui é onde o conteudo sera exibido -->
+            <div class="cadastro-container">
+                <h2>Cadastro</h2>
+        
+                <form action="processar_cadastro.php" method="POST">
+                <label for="nome_empresa">Nome da Empresa</label>
+                <input type="text" id="nome_empresa" name="nome_empresa" required>
+        
+                <label for="Email">Email</label>
+                <input type="email" id="email_empresa" name="email_empresa" required>
+        
+                <label for="senha">Senha</label>
+                <input type="password" id="password-cadastro" required>
+        
+                <input type="submit" value="Enviar" id="button-send" >
+            <div>
 
-        <section id="empresas" class="blocos">
-            <div class="container">
-                <h2>Empresas</h2>
-                <!-- adicionar imagem -->
-                <p>
-                    Junte-se à EcoCertificadas, a plataforma que destaca empresas comprometidas com práticas sustentáveis. Ao se inscrever, você terá a oportunidade de compartilhar suas iniciativas ambientais, como redução de emissões de carbono, reciclagem e uso de energia renovável. Mostre as ODS (Objetivos de Desenvolvimento Sustentável) que sua empresa abraça, contribuindo para um mundo mais justo e sustentável. Faça parte desta comunidade que promove a responsabilidade ambiental e conscientiza os consumidores sobre o impacto de suas escolhas. Cadastro e comece a construir um futuro mais verde hoje mesmo! 
-                </p>
-                <a href="view/cadastro.html" id="inscreva" class="waves-effect waves-light btn-large">Cadastre sua empresa</a>
-            </div>
         </section>
-
-        <section id="" class="">
-            <div class="container">
-                
-                <!-- <button>Página de pesquisa</button> -->
-            </div>
-        </section>
-
-        <section id="" class="">
-            <!-- O que precisa ser feito para a mudança acontecer. -->
-        </section>
-
     </main>
     <footer class="page-footer" id="custom">
         <div class="container">
@@ -145,7 +115,7 @@
 
     <script type="text/javascript" src="../controller/appController.js"></script>
     <!-- Script para acessar a API e o BD-->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>
