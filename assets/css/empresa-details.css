@@ -1,0 +1,89 @@
+:root {
+    --cor-verde-primaria: #acc474;
+    --cor-verde-secundaria: #388e3c;
+    --cor-laranja: #F2BB77;
+    --cor-verde-escuro: #1c2c04;
+    --cor-azul: #2E5EAA;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#nav-bar{
+    background-color: #4F5A34;
+}
+
+.nav-wrapper{
+    background-color: #4F5A34;
+}
+
+.cadastro-container {
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin: 10% auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+}
+
+.cadastro {
+    
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Cor de fundo do formulário */
+    
+}
+
+h2 {
+    
+    text-align: center;
+    color: #333; /* Cor do texto do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#button-send {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde-escuro);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#button-send:hover {
+    background-color: var(--cor-verde-secundaria);
+    color: var(--cor-branco);
+}

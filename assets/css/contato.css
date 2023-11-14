@@ -1,0 +1,38 @@
+:root {
+    --cor-verde-primaria: #acc474;
+    --cor-verde-secundaria: #388e3c;
+    --cor-laranja: #F2BB77;
+    --cor-verde-escuro: #1c2c04;
+    --cor-azul: #2E5EAA;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#nav-bar{
+    background-color: #4F5A34;
+}
+
+.nav-wrapper{
+    background-color: #4F5A34;
+}
+
+#contato-info{
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+
+#contato-info > h1{
+    text-align: center;
+    font-size: 2rem;
+}

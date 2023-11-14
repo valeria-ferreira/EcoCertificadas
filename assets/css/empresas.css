@@ -1,0 +1,92 @@
+:root {
+    --cor-verde-primaria: #acc474;
+    --cor-verde-secundaria: #388e3c;
+    --cor-laranja: #F2BB77;
+    --cor-verde-escuro: #1c2c04;
+    --cor-azul: #2E5EAA;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#nav-bar{
+    background-color: #4F5A34;
+}
+
+.nav-wrapper{
+    background-color: #4F5A34;
+}
+
+/* deixar a section do tamanho da pagina */
+
+.section-one {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    background: white;
+    color: white;
+}
+
+.search-wrapper {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço entre as duas divs */
+   
+}
+#label{
+    font-size: 2rem;
+    color: black;
+}
+
+#search{
+    color: rgb(12, 12, 12);
+}
+.result-container{
+    width: 50%;
+    margin: 0 auto;
+}
+#cards-result {
+    display: flex;
+    text-align: left;
+    border: 1px solid black;
+    background-color: rgba(238, 229, 229, 0.034);
+    border-radius: 10px;
+    color: #000000;
+  
+    
+}
+
+#cards-result .name {
+    margin: 10px;
+}
+#cards-result .description{
+    margin: 10px;
+}
+#cards-result .actuation-area{
+    margin: 10px;
+}
+.card{
+    text-align: left;
+    border: 1px solid black;
+    background-color: rgba(15, 15, 14, 0.199);
+    border-radius: 10px;
+    width: 400px;
+}
+.hide{
+    display: none;
+}
+
+/* Exemplo de estilo para as divs dentro de cards-result */
+#cards-result .name,
+#cards-result .description,
+#cards-result .actuation-area {
+    margin-bottom: 10px; /* Adiciona espaço entre os itens dentro de cards-result */
+}

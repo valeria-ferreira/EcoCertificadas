@@ -89,6 +89,7 @@
 /* Sobre nos */
 #sobre-nos{
     background-color: var(--cor-verde-primaria);
+    
 }
 #sobre-nos h2,
 #sobre-nos h3 {
@@ -117,6 +118,7 @@
 /* Empresas */
 #empresas{
     background-color: rgb(243, 243, 243);
+    
 }
 
 #empresas {
