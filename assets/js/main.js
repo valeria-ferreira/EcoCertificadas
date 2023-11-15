@@ -19,6 +19,7 @@ const searchInput = document.querySelector("[data-search")
 searchInput.addEventListener("input", e =>{
     const value = e.target.value.toLowerCase()
     /* console.log(users) - teste no console para visualizar os itens pesquisados*/ 
+
     users.forEach(user => {
         const isVisible = value === "" || user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value)
         user.element.classList.toggle("hide", !isVisible)

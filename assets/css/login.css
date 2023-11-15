@@ -1,15 +1,20 @@
+body{
+    background-image: url(/assets/img/desenvolvimento-sustentavel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .login-container {
     display: block;
     text-align: left;
-    width: 50%;
+    max-width: 40rem;
     margin: 10% auto;
     border: 1px solid #ccc;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 50);
     background-color: #fff;
-    
 }
 
 h2 {
@@ -39,16 +44,43 @@ textarea {
 
 #button-send {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 5%;
+    height: 50px;
     font-size: 18px;
     font-weight: bold;
     color: var(--cor-branco);
     background-color: var(--cor-verde-escuro);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #button-send:hover {
     background-color: var(--cor-verde-secundaria);
     color: var(--cor-branco);
+}
+
+.login-container h2 + span{
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    margin: auto 3rem;
+    color: white;
+}
+
+.login-container h6{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-container div{
+    margin: 1rem 1rem 2rem;
+}
+
+.login-container div label{
+    font-size: large;
 }
