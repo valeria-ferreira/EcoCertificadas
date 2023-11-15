@@ -29,15 +29,28 @@ header{
 #contato-info{
     display: block;
     text-align: left;
-    max-width: 40rem;
+    max-width: 60rem;
+    display: grid;
+    justify-items: center;
     margin: 10% auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 50);
-    background-color: #fff;
-    
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 50); */
+    /* background-color: #fff; */
+}
+
+#contato-info .card-title{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+#contato-info .card-text{
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: math;
 }
 
 #contato-info > h1{
@@ -52,4 +65,8 @@ header{
 
 .pagina-toda{
     height: 75vh;
+}
+
+.card.text-center{
+    box-shadow: none;
 }

@@ -8,7 +8,7 @@ header{
     background-color: #00000052;
 }
 
-.login-container {
+/* .login-container {
     display: block;
     text-align: left;
     max-width: 40rem;
@@ -19,10 +19,38 @@ header{
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 50);
     background-color: #fff;
+} */
+
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 50);
+}
+
+.apresentacao {
+    flex: 1;
+    padding: 20px;
+}
+
+.apresentacao h2{
+    font-size: 40px;
+}
+
+.formulario {
+    flex: 1;
+    padding: 4rem 2rem;
+    border-left: 2px solid #ccc;
 }
 
 h2 {
-    
     text-align: center;
     color: #333; /* Cor do texto do título */
 }
@@ -33,7 +61,7 @@ form {
 }
 
 label {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 input,
@@ -48,7 +76,7 @@ textarea {
 
 #button-send {
     width: 50%;
-    margin: 0 auto 5%;
+    margin: 5% auto 0;
     height: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -82,7 +110,7 @@ textarea {
 }
 
 .login-container div{
-    margin: 1rem 1rem 2rem;
+    margin: .2rem;
 }
 
 .login-container div label{

@@ -69,11 +69,13 @@ var displayDiv = document.querySelector('[data-user-cards-container]');
 loginEmpresa.forEach(function (data) {
     // Aqui você pode criar um elemento para cada conjunto de dados e adicioná-lo à página
     var card = document.querySelector("[data-result-template]").content.cloneNode(true).children[0];
+    var img = card.querySelector("[data-image]");
     var header = card.querySelector("[data-header]");
     var cnpj = card.querySelector("[data-cnpj]");
     var email = card.querySelector("[data-email]");
     var password = card.querySelector("[data-password]");
 
+    img.src = '/assets/img/photoExemple.png';
     header.textContent = data.name;
     cnpj.innerHTML = "<strong>CNPJ:</strong> " + data.CNPJ;
     email.innerHTML = "<strong>Email:</strong> " + data.email;
