@@ -13,7 +13,7 @@ document.querySelector('.login-container form').addEventListener('submit', funct
         // Receber resposta
         .then(data => {
             // Verificar se informações inseridas e existentes são iguais
-            const user = data.find(user => user.username === email_login && user.password === password_login);
+            const user = data.find(user => user.email === email_login && user.password === password_login);
 
             // Verificar se é login de ADM
             if (user) {
@@ -67,6 +67,10 @@ document.querySelector('.login-container form').addEventListener('submit', funct
                     corpoMensagem.appendChild(mensagem);
                     areaMensagem.insertAdjacentElement('afterend', corpoMensagem);
                     document.querySelector('.login-container h6 + span').style.backgroundColor = '#f75e53';
+                    // Remover mensagem depois de 5 segundos
+                    setTimeout(function() {
+                        document.querySelector('.login-container h6 + span').remove();
+                    }, 5000);
                 }
             }
         })
