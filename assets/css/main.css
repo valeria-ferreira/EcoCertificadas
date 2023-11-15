@@ -1,71 +1,83 @@
 :root {
     --cor-verde-primaria: #acc474;
     --cor-verde-secundaria: #388e3c;
-    --cor-laranja: #F2BB77;
+    --cor-laranja: #f2bb77;
     --cor-verde-escuro: #1c2c04;
-    --cor-azul: #2E5EAA;
+    --cor-azul: #2e5eaa;
     --cor-branco: #ffffff;
     --cor-preto: #000000;
-}
-
-/* Seleção do usuario */
-::selection {
-    background-color: var(--cor-verde-escuro); 
-    color: var(--cor-branco); 
-}
-
-
-/* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@100;400&display=swap');
-
-/* Estilo geral para o Nav-Bar */
-.font {
-    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  /* Seleção do usuario */
+  ::selection {
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-branco);
+  }
+  
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(89, 255, 0, 0.269);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.269);
+  }
+  
+  /* Fontes */
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@100;400&display=swap");
+  
+  /* Estilo geral para o Nav-Bar */
+  .font {
+    font-family: "Cinzel Decorative", serif;
     font-size: 28px;
-}
-
-#icon {
+  }
+  
+  #icon {
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--cor-branco);
     margin-left: 20px;
     line-height: 64px;
     letter-spacing: 1px;
     position: static;
-}
-
-#nav-bar {
+  }
+  
+  #nav-bar {
     background-color: transparent;
     box-shadow: none;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-#nav-bar ul a {
-    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #nav-bar ul a {
+    font-family: "Montserrat", sans-serif;
     color: var(--cor-branco);
-    transition: color 0.3s ease, background-color 0.3s ease; 
+    transition: color 0.3s ease, background-color 0.3s ease;
     margin-right: 10px;
-    font-size: 18px; 
+    font-size: 18px;
     letter-spacing: 1px;
-}
-
-#nav-bar ul a:hover {
+  }
+  
+  #nav-bar ul a:hover {
     background-color: transparent;
     color: var(--cor-verde-primaria);
-}
-
-/* Ocultar h1 em telas maiores que 992px */
-@media screen and (min-width: 993px) {
+  }
+  
+  /* Ocultar h1 em telas maiores que 992px */
+  @media screen and (min-width: 993px) {
     #icon {
-        z-index: 0;
-        position: absolute;
-        margin: 0;
+      z-index: 0;
+      position: absolute;
+      margin: 0;
     }
-}
-
-/* Estilo geral para o Footer */
-#custom{
+  }
+  
+  /* Estilo geral para o Footer */
+  #custom {
     background-color: var(--cor-verde-secundaria);
-}
-
+  }
