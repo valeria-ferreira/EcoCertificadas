@@ -65,14 +65,16 @@
     <main>
         <section class="section-one">
             <div class="search-wrapper">
-                <label for="search" id="label">Procurar empresas</label>
-                <input type="search" id="search" data-search>
+                <label for="search" id="label">Procurar Empresas</label>
+                <input type="search" id="search-empresas" onkeyup="search_empresa()" data-search>
             </div>
             <div class="result-container" data-user-cards-container></div>
             <template data-result-template>
-                <div id="cards-result">
+                <div id="cards-result" class="template-results">
                     <div class="name" class="name" data-header></div>
-                    <div class="description" class="descript" data-body></div>
+                    <div class="cnpj" data-cnpj></div>
+                    <div class="email" data-email></div>
+                    <div class="password" data-password></div>
                 </div>
             </template>
         </section>
