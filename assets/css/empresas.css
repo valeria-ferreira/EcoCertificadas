@@ -63,6 +63,21 @@ body {
   row-gap: 10%;
   overflow: auto;
 }
+
+.result-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.result-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.269);
+}
+
+.result-container::-webkit-scrollbar-thumb {
+  background-color: rgba(89, 255, 0, 0.269);
+  border-radius: 20px; 
+  border: 3px solid rgba(0, 0, 0, 0.269); 
+}
+
 #cards-result {
   display: flex;
   flex-direction: column;
