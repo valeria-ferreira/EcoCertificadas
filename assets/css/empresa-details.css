@@ -8,10 +8,14 @@
     --cor-preto: #000000;
 }
 
+header{
+    background-color: #00000052;
+}
 
-body, html {
-    height: 100%;
-    margin: 0;
+body{
+    background-image: url(/assets/img/desenvolvimento-sustentavel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #nav-bar{

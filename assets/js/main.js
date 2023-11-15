@@ -77,7 +77,6 @@ loginEmpresa.forEach(function (data) {
     header.textContent = data.name;
     cnpj.innerHTML = "<strong>CNPJ:</strong> " + data.CNPJ;
     email.innerHTML = "<strong>Email:</strong> " + data.email;
-    password.innerHTML = "<strong>Password:</strong> " + data.password;
 
     displayDiv.appendChild(card);
 });

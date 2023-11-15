@@ -9,25 +9,33 @@
 }
 
 
-body, html {
-    height: 100%;
-    margin: 0;
+body{
+    background-image: url(/assets/img/desenvolvimento-sustentavel.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+header{
+    background-color: #00000052;
 }
 
 #nav-bar{
-    background-color: #4F5A34;
+    background-color: transparent;
 }
 
 .nav-wrapper{
-    background-color: #4F5A34;
+    background-color: transparent;
 }
 
 #contato-info{
     display: block;
-    text-align: center;
-    width: 50%;
+    text-align: left;
+    max-width: 40rem;
     margin: 10% auto;
+    border: 1px solid #ccc;
     padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 50);
     background-color: #fff;
     
 }
@@ -35,4 +43,13 @@ body, html {
 #contato-info > h1{
     text-align: center;
     font-size: 2rem;
+    color: black;
+}
+
+#contato-info > p{
+    text-align: center;
+}
+
+.pagina-toda{
+    height: 75vh;
 }

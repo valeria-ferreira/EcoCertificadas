@@ -9,6 +9,9 @@
 
     font-family: 'Montserrat', sans-serif;
 }
+header{
+    background-color: #00000052;
+}
 
 #background{
     position: relative;
@@ -78,6 +81,9 @@
     color: var(--cor-branco);
     text-align: center;
     padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .container {
@@ -89,6 +95,8 @@
 /* Sobre nos */
 #sobre-nos{
     background-color: var(--cor-verde-primaria);
+    height: 100vh;
+   
     
 }
 #sobre-nos h2,
@@ -116,16 +124,15 @@
 }
 
 /* Empresas */
-#empresas{
-    background-color: rgb(243, 243, 243);
-    
-}
+
 
 #empresas {
     background-color: var(--cor-branco);
     color: var(--cor-verde-escuro);
     text-align: center;
     padding: 50px 0;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
 }
 
 #empresas h2 {
@@ -134,15 +141,19 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 #empresas p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #empresas #inscreva {
+    
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: var(--cor-branco);

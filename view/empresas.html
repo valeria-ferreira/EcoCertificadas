@@ -60,7 +60,7 @@
                 <li><a href="/view/contato.html">Contato</a></li>
                 <li><a href="/view/cadastro.html" id="btn">Cadastro</a></li>
             </ul>
-    </section>
+        </section>
     </header>
     <main>
         <section class="section-one">
@@ -68,15 +68,16 @@
                 <label for="search" id="label">Procurar Empresas</label>
                 <input type="search" id="search-empresas" onkeyup="search_empresa()" data-search>
             </div>
-            <div class="result-container" data-user-cards-container></div>
-            <template data-result-template>
-                <div id="cards-result" class="template-results">
-                    <div class="name" class="name" data-header></div>
-                    <div class="cnpj" data-cnpj></div>
-                    <div class="email" data-email></div>
-                    <div class="password" data-password></div>
-                </div>
-            </template>
+            <div class="result-container" data-user-cards-container>
+                <template data-result-template>
+                    <div id="cards-result" class="template-results">
+                        <div class="name" class="name" data-header></div>
+                        <div class="cnpj" data-cnpj></div>
+                        <div class="email" data-email></div>
+                        <div class="password" data-password></div>
+                    </div>
+                </template>
+            </div>
         </section>
     </main>
     </main>
@@ -104,10 +105,10 @@
             <div class="container">
                 © 2023 EcoCertificadas | Todos os direitos reservados
                 <span class="grey-text text-lighten-4 right"> Desenvolvedores:
-                    <a href="" class="grey-text text-lighten-3">Geovanny Diniz, </a>
-                    <a href="" class="grey-text text-lighten-3">Igor Pinheiro, </a>
-                    <a href="" class="grey-text text-lighten-3">Raquel Stefany </a> e
-                    <a href="" class="grey-text text-lighten-3">Valéria Ferreira</a>
+                    <a href="https://github.com/geovannydinizm" class="grey-text text-lighten-3">Geovanny Diniz, </a>
+                    <a href="https://github.com/IgorPinheiiro" class="grey-text text-lighten-3">Igor Pinheiro, </a>
+                    <a href="https://github.com/RaquelStefany" class="grey-text text-lighten-3">Raquel Stefany </a> e
+                    <a href="https://github.com/valeria-ferreira" class="grey-text text-lighten-3">Valéria Ferreira</a>
                 </span>
             </div>
         </div>
@@ -115,7 +116,7 @@
 
     <script type="text/javascript" src="../controller/appController.js"></script>
     <!-- Script para acessar a API e o BD-->
-    
+
 </body>
 
 </html>
