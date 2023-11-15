@@ -31,6 +31,7 @@
     margin-left: 20px;
     line-height: 64px;
     letter-spacing: 1px;
+    position: static;
 }
 
 #nav-bar {
@@ -57,7 +58,9 @@
 /* Ocultar h1 em telas maiores que 992px */
 @media screen and (min-width: 993px) {
     #icon {
-        display: none;
+        z-index: 0;
+        position: absolute;
+        margin: 0;
     }
 }
 
