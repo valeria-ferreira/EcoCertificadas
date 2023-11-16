@@ -46,7 +46,7 @@ searchInput.addEventListener("input", function (e) {
         const isVisible = value === "" || data.name.toLowerCase().includes(value) || data.email.toLowerCase().includes(value);
         document.getElementById("cards-result").classList.toggle("hide", !isVisible);
     });
-}); */
+}); 
 
 /* fetch("https://jsonplaceholder.typicode.com/users")
 .then(res => res.json())

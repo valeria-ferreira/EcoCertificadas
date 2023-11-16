@@ -74,7 +74,6 @@ header{
     transform: translateY(3px); /* Centralizar melhor a gota */
 }
 
-
 /* BLOCOS */
 
 .blocos {
@@ -95,10 +94,8 @@ header{
 /* Sobre nos */
 #sobre-nos{
     background-color: var(--cor-verde-primaria);
-    height: 100vh;
-   
-    
 }
+
 #sobre-nos h2,
 #sobre-nos h3 {
     font-weight: bold;
@@ -123,47 +120,50 @@ header{
     position: relative;
 }
 
-/* Empresas */
+/* Empresas Pessoas*/
 
 
 #empresas {
+    background-color: #e7e7e7;
+    color: var(--cor-preto);
+    text-align: left;
+    padding: 50px;
     background-color: var(--cor-branco);
-    color: var(--cor-verde-escuro);
-    text-align: center;
-    padding: 50px 0;
-    height: 100vh;
-    background-color: rgb(243, 243, 243);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#empresas h2 {
-    font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
+
+/* Pessoas  */
+#pessoas {
+    color: var(--cor-preto);
+    text-align: left;
+    padding: 50px;
+    background-color: var(--cor-branco);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#empresas p {
-    font-size: 20px;
+#pessoas, #empresas p {
+    font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 30px;
-    text-align: center;
 }
 
-#empresas #inscreva {
-    
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cor-branco);
-    background-color: var(--cor-verde-escuro);
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#empresas #inscreva:hover {
+#pesquisa, #inscreva{
+    display: inline-block;
+    width: 20em;
     background-color: var(--cor-verde-secundaria);
     color: var(--cor-branco);
+    transition: box-shadow 0.3s ease;
+}
+#pesquisa:hover, #inscreva:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2); /* Adicionando um efeito de brilho */
 }
 
+/* Para ficar 100% em telas maiores */
+@media screen and (min-width: 993px) {
+    .blocos {
+      height: 100vh;
+    }
+  }
