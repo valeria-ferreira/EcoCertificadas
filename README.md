@@ -1,4 +1,5 @@
-![eco](https://github.com/valeria-ferreira/EcoCertificadas/assets/89273671/81933a78-f532-4e32-9208-cfb308f73b7e)
+![ecoCertificadas](https://github.com/valeria-ferreira/EcoCertificadas/assets/89273671/f23d9c4f-85de-4b45-8da9-65b14ef7d917)
+
 
 # EcoCertificadas
 
