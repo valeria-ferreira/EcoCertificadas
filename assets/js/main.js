@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// Para que o nav-bar versão mobile funcione
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os elementos com a classe 'sidenav'
+    var elems = document.querySelectorAll('.sidenav');
+    // Inicializa a sidenav do Materialize
+    var instances = M.Sidenav.init(elems, {});
+  });
+  
+  
+
 let results = []
 
 // Obtenha os dados do localStorage
