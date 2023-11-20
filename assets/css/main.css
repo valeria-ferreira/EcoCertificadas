@@ -7,6 +7,14 @@
     --cor-branco: #ffffff;
     --cor-preto: #000000;
   }
+
+    /* estilo do relogio e data */
+    #clock-container {
+      position: relative;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-family: "Montserrat", sans-serif;
+    }
   
   /* Seleção do usuario */
   ::selection {
