@@ -16,8 +16,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa a sidenav do Materialize
     var instances = M.Sidenav.init(elems, {});
   });
-  
-  
+
+// Animação Scroll
+const animaScroll = document.querySelectorAll('[data-scroll]');
+const animationClass = 'anime';
+
+function animeScroll(target) {
+    const elemento = document.querySelector(target);
+    console.log(elemento);
+
+    const offset = 100;
+
+    if (elemento) {
+        const posicaoTarget = elemento.offsetTop - offset;
+
+        window.scrollTo({
+            top: posicaoTarget,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Adicionando um evento ao documento para delegar cliques aos elementos desejados
+document.addEventListener('click', function(evento) {
+    // Verifica se o clique ocorreu nos elementos desejados
+    if (evento.target.closest('.scroll-down-arrow a')) {
+        evento.preventDefault();
+        const target = evento.target.closest('.scroll-down-arrow a').getAttribute('href');
+        animeScroll(target);
+    }
+});
+
+
 
 let results = []
 
