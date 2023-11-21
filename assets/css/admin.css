@@ -1,0 +1,98 @@
+body {
+  height: 100vh;
+}
+
+#section-container {
+  padding: 1rem;
+}
+
+#section-container .row:nth-of-type(1) {
+  margin-top: 1rem;
+  background-color: #ffffff90;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 1fr;
+}
+
+.row:nth-of-type(2) .col {
+  width: 100%;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.row:nth-of-type(2) .col h1 {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#adicionarEmpresas, #infoEmpresas, #apagarEmpresa {
+  background: transparent;
+  max-height: 100%;
+}
+
+#infoEmpresas h2{
+    text-align: left;
+}
+
+#infoEmpresas .modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .modal-content {
+  padding: 0;
+}
+
+.modal .modal-content h6, #statusInfo {
+  text-align: center;
+  padding: 1rem;
+  display: grid;
+  margin: auto 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.modal .modal-footer {
+  column-gap: 10px;
+}
+
+.result-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.result-container {
+  overflow: auto;
+  max-height: 600px;
+}
+
+.result-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.result-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.269);
+}
+
+.result-container::-webkit-scrollbar-thumb {
+  background-color: rgba(89, 255, 0, 0.269);
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.269);
+}
+
+footer {
+  top: 100%;
+  position: sticky;
+}

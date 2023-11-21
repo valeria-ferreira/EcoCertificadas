@@ -1,0 +1,5 @@
+[
+    {"name": "Empresa 1", "CNPJ": "68.779.361/0001-11", "email": "empresa1@email.com", "password": "senha"},
+    {"name": "Empresa 2", "CNPJ": "40.091.440/0001-16", "email": "empresa2@email.com", "password": "senha"},
+    {"name": "Empresa 3", "CNPJ": "40.091.440/0001-16", "email": "empresa3@email.com", "password": "senha"}
+]

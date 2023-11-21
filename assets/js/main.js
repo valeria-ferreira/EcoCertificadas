@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Para que o nav-bar versão mobile funcione
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Seleciona todos os elementos com a classe 'sidenav'
     var elems = document.querySelectorAll('.sidenav');
     // Inicializa a sidenav do Materialize
     var instances = M.Sidenav.init(elems, {});
-  });
+});
 
 // Animação Scroll
 const animaScroll = document.querySelectorAll('[data-scroll]');
@@ -38,7 +38,7 @@ function animeScroll(target) {
 }
 
 // Adicionando um evento ao documento para delegar cliques aos elementos desejados
-document.addEventListener('click', function(evento) {
+document.addEventListener('click', function (evento) {
     // Verifica se o clique ocorreu nos elementos desejados
     if (evento.target.closest('.scroll-down-arrow a')) {
         evento.preventDefault();
@@ -54,6 +54,17 @@ let results = []
 // Obtenha os dados do localStorage
 let loginEmpresa = localStorage.getItem("loginEmpresa");
 loginEmpresa = loginEmpresa ? JSON.parse(loginEmpresa) : [];
+
+if (loginEmpresa.length == 0) {
+    // Pegar dados inicias do arquivo JSON
+    fetch('/model/empresasModel.json')
+        // Converter informações para JSON
+        .then(response => response.json())
+        .then(data => {
+            // Salvar dados no localStorage
+            localStorage.setItem('loginEmpresa', JSON.stringify(data));
+        })
+}
 
 /* ISTO É UMA BUSCA DINAMICA USANDO JAVASCRIPT PARA UMA BARRA DE PESQUISA */
 
@@ -113,7 +124,6 @@ loginEmpresa.forEach(function (data) {
     var header = card.querySelector("[data-header]");
     var cnpj = card.querySelector("[data-cnpj]");
     var email = card.querySelector("[data-email]");
-    var password = card.querySelector("[data-password]");
 
     img.src = '/assets/img/photoExemple.png';
     header.textContent = data.name;
@@ -133,9 +143,9 @@ function updateClock() {
     const date = `${now.toLocaleDateString()}`;
 
     const clockElement = document.getElementById('clock');
-    clockElement.textContent =`${date} - ${hours}:${minutes}:${seconds}`;
+    clockElement.textContent = `${date} - ${hours}:${minutes}:${seconds}`;
 
-    
+
 }
 // Atualizar o relogio a cada segundo
 setInterval(updateClock, 1000);
