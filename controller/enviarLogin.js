@@ -37,10 +37,12 @@ document.querySelector('.login-container form').addEventListener('submit', funct
                 
                 // Verificar se é login de user (empresa)
                 let isValid = false;
+                let indice;
                 // Percorrer dados do JSON
                 for (let i = 0; i < loginEmpresa.length; i++){
                     if (loginEmpresa[i].email === email_login && loginEmpresa[i].password == password_login){
                         isValid = true;
+                        indice = i
                         break;
                     }
                 }
@@ -57,7 +59,7 @@ document.querySelector('.login-container form').addEventListener('submit', funct
                     // Redirecionar para tela de usuário (empresa)
                     // Adiciona um atraso de 2 segundos antes de redirecionar
                     setTimeout(function() {
-                        window.location.href = '/view/user/perfil.html';
+                        window.location.href = '/view/user/perfil.html?empresa=' + indice;
                     }, 2000);
                 }
                 else{
